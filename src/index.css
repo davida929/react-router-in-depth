@@ -13,6 +13,7 @@ body {
 * {
   color: #fff;
   margin: 0;
+  box-sizing: border-box;
 }
 p {
   margin: 20px 0;
@@ -25,9 +26,21 @@ button {
   background: var(--primary);
   cursor: pointer;
 }
-
 /* navbar */
-
+header{
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+}
+header nav a {
+  text-decoration: none;
+  padding: 8px 32px;
+}
+header nav a:hover , .active {
+  background-color: var(--primary);
+}
 
 /* page content */
 
